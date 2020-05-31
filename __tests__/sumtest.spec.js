@@ -8,6 +8,7 @@ describe("test sum function", () => {
         // this is a basic assertion, if an assertion fails the whole
         // test fails
         expect(result).toEqual(0);
+        console.log(process.env.SUPER_COOL_API_KEY);
     });
 
     // also test with some positive numbers

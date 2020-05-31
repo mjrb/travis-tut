@@ -31,3 +31,23 @@ for runing tests in a macos enviroment https://docs.travis-ci.com/user/tutorial/
 - the default settings should be fine but you can also add enviroment variables to
   provide secrets that shouldn't be public that you need for testing. like api keys
 - try pushing a change and watch it build
+
+## more interesting things
+- you can also setup enviroment variables in the travis settings.
+  - this allows you to add secret config variables that you can use during testing
+    without having them publicly in the repo
+  - the default setting is to not show them in the log, so even if you do accidently
+    print them in the public log it will display `[redacted]` instead of your secret
+	api key
+- branch protection/merge requests
+  - you can configure github to force people to push code to a branch and then merge
+    it into master. it's highly suggested to do this and also require code review
+	which will improve code quality
+  - in the branch protection settings you can also require that the travis tests pass
+    so that you don't merge in broken code
+- travis also allows you to have sidecar services like databases that the application can use
+  while its undergoing tests
+- it's also not limited to testing, you can also have travis
+  - run a linter on your code
+  - calulcate code coverage
+  - deploy your code to your server

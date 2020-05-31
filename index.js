@@ -1,9 +1,5 @@
 const sum = (arr) => {
-    let result = 0;
-    for (let i = 0; i < arr.length; i++) {
-        result += arr[i];
-    }
-    return result;
+    return arr.reduce((accumulator, num) => accumulator + num, 0);
 }
 
 module.exports = sum;

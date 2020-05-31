@@ -14,7 +14,7 @@ it merges into master. this way you know master allways passes all the tests.
 ## jest specifics
 this tutorial uses the jest testing library, which automatically finds tests by looking
 though the \_\_tests\_\_ folder. you can run the included test by executing `npm test`.
-see `__tests__/sumtest.spec.json` for more details. also here is a good [reference](https://www.valentinog.com/blog/jest/) for more info
+see `__tests__/sumtest.spec.js` for more details. also here is a good [reference](https://www.valentinog.com/blog/jest/) for more info
 
 ## travis specifics
 once the travis integration is setup, travis will look at the travis.yml in your repo
